@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#copiarRamal {
+    padding: 2px;
+    transition: background 100ms ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#copiarRamal:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+#copiarRamal:active {
+    background-color: rgba(80, 80, 80, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: #fff;
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(249,251,255,1) 50%, rgba(255,255,255,1) 100%);
+
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #212529;
+}
+
+h1 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+form {
+    width: 775px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    font-size: 14pt;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+table {
+    width: 950px;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 36px auto;
+    font-size: 14pt;
+
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    overflow: hidden;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+tbody {
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+tbody tr td:nth-child(odd) {
+    text-align: center;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 150px 700px 100px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    z-index: 1;
+}
+
+thead tr {
+    background-color: hsl(219deg, 85%, 59%);
+    border-bottom: 1px solid #ced4da !important;
+    z-index: 10;
+}
+
+th {
+    font-weight: 600;
+    user-select: none;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+td, th {
+    padding: 5px;
+}
